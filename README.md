@@ -8,9 +8,9 @@ You must define a macro called READ_SIZE file, which indicates the amount of cha
 Function should be prototyped as follows: char *get_next_line(const int fd);
 (!) get_next_line should return the results without the '\n'.
 
-# The main complication is handling files that don't terminate in '\n'.
+The main complication is handling files that don't terminate in '\n'.
 
 Tests: (gcc string.c)
-man gcc | ./a.out
-./a.out <(echo -n abc)
-./a.out <(echo -en "abc \n abc")
+man gcc | ./a.out;
+./a.out <(echo -n abc);
+./a.out <(echo -en "abc \n abc");
